@@ -13,32 +13,32 @@ const songs = [
     {
         trackname: "Tum Se",
         artist: "Sachin-Jigar",
-        path: 'http://127.0.0.1:5500/songs/Tum%20Se_320(PagalWorld.com.sb).mp3'
+        path: 'Tum Se_320(PagalWorld.com.sb).mp3'
     },
     {
         trackname: "O Sajni Re",
         artist: "Arijit Singh",
-        path: 'http://127.0.0.1:5500/songs/O%20Sajni%20Re_320(PagalWorld.com.sb).mp3'
+        path: 'O Sajni Re_320(PagalWorld.com.sb).mp3'
     },
     {
         trackname: "Ve Kamleya",
         artist: "Arijit Singh",
-        path: 'http://127.0.0.1:5500/songs/Ve%20Kamleya_320(PagalWorld.com.sb).mp3'
+        path: 'Ve Kamleya_320(PagalWorld.com.sb).mp3'
     },
     {
         trackname: "Tenu Khabar nhi",
         artist: "Arijit Singh",
-        path: 'http://127.0.0.1:5500/songs/Tainu-Khabar-Nahi(PagalNew.Com.Se).mp3'
+        path: 'Tainu-Khabar-Nahi(PagalNew.Com.Se).mp3'
     },
     {
         trackname: "Dekha Tenu",
         artist: "Sheikh Mahim Edward",
-        path: 'http://127.0.0.1:5500/songs/Dekha%20Tenu%20Pehli%20Pehli%20Baar%20Ve_320(PagalWorld.com.sb).mp3'
+        path: 'Dekha Tenu Pehli Pehli Baar Ve_320(PagalWorld.com.sb).mp3'
     },
     {
         trackname: "Tu hain Kahan",
         artist: "Zayan",
-        path: 'http://127.0.0.1:5500/songs/_Tu%20Hai%20Kahan_320(PagalWorld.com.sb).mp3'
+        path: '_Tu Hai Kahan_320(PagalWorld.com.sb).mp3'
     }
 ]
 

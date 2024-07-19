@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    display: flex;
+}
+.song_list{
+    position: relative;
+    width: 60%;
+    height: auto;
+    overflow-y: scroll;
+    color: white;
+    background-color: rgb(24, 23, 23);
+}
+.song_list ul{
+    margin: 11px 0 0 6px;
+    height: auto;
+   
+}
+.song_list ul li{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   width: 70%;
+   border: 2px solid white;
+   border-radius: 4px;
+   font-size: 20px;
+margin-top: 10px;
+
+}
+.path{
+    display: none;
+}
+.music{
+    width: 28px;
+    filter: invert(1);
+}
+.song_list h1{
+    padding: 50px 0  0  10px;
+    font-size: 30px;
+}
+.library{
+    filter: invert(1);
+    width: 22px;
+    padding-right: 5px;
+}
+.playlist{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    border: 2px solid white;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    margin:5px 0 0 5px;
+}
+.playlist img{
+    width: 22px;
+    padding-right: 5px ;
+    filter: invert(1);
+}
+.playlist h1{
+    padding: 0;
+    font-size: 20px;
+}
+.close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    filter: invert(1);
+    display: none;
+}
+.song_info{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+.song-artist{
+    font-size: 20px;
+}
+.seek{
+    position: relative;
+}
+.circle{
+    position: absolute;
+}
+.song-img{
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 4px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.stick{
+    display: none;
+    border-top-right-radius: 30px;
+   margin-top: 100px;
+    width: 10px;
+    height: 60% ;
+    border: 2px solid black;
+    background-color: grey;
+    /* transform: skewX(-17deg); */
+    z-index: 1;
+    /* animation: cdstick 5s linear 1s infinite  none; */
+}
+/* @keyframes cdstick {
+    0%{
+        
+        transform:skew(0deg,0deg);
+    }
+    100%{
+        transform: skew(15deg,15deg);
+    }
+} */
+.cd{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.shine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 5px solid black;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 100px;
+    animation: cdplayer 5s ease-in-out 1s infinite forwards  ;
+}
+@keyframes cdplayer {
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.inner{
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    border-radius: 60px;
+}
+.hamburger{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: none;
+}
+.info{
+    padding-top: 30px;
+    width: 77%;
+    height: 70%;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+.seekbar{
+    display: flex;
+    gap: 10px;
+}
+.seek{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height:10px ;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: black;
+    position: absolute;
+    transition: left 0.5s;
+}
+.volbar{
+    position: relative;
+}
+.volbar img{
+    position: absolute;
+    top: -4px;
+    padding-left: 2px;
+}
+
+@media  (max-width:1120px){
+    .song_list{
+        height: 100%;
+        overflow: scroll;
+        position: absolute;
+        left: -120%;
+        transition: all 0.5s;
+        z-index: 1;
+        width: 70%;
+        background-color: black;
+        padding: 0;
+    }
+    .song_list ul li{
+        width: 95%;
+        height: 75px;
+    }
+    .song_list h1{
+        font-size: 20px;
+    }
+    .playlist{
+        width: 88%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .close{
+        display: block;
+    }
+    .song_info{
+        width: 100%;
+    }
+    .seek{
+        width: 300px;
+    }
+    .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .song-img{
+        width: 300px;
+    }
+    .seekbar input{
+        width: 250px;
+    }
+}

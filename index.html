@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeClauseinternship_Musicplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+   <div class="container">
+    <div class="song_list" id="list">
+
+        <img class="close" src="svg/close.svg" alt="">
+        
+        <h1><img class="library" src="svg/library.svg" alt="">Your library</h1>
+
+<!-- 
+        <div class="playlist">
+            <h1> Create New playlist</h1>
+            <img  src="svg/plus.svg" alt="">
+        </div> -->
+        <ul>
+         
+        </ul>
+    </div>
+    <div class="song_info">
+
+
+        <img class="hamburger" src="svg/hamburger.svg" alt="">
+
+
+
+        <div class="info">
+        <div class="song-img">
+            <div class="stick"></div>
+            <div class="cd">
+                <div class="shine">
+                    <div class="inner">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="song-name"></div>
+        <div class="song-artist"></div>
+    </div>
+
+
+        <div class="buttons">
+            <div class="perivousbtn">
+                <img id="perivous" src="svg/previous.svg" alt="perivous">
+            </div>
+            <div class="play_pause">
+            <img id="play" src="svg/play.svg" alt="">
+            </div>
+            <div class="nextbtn">
+                <img id="next" src="svg/next.svg" alt="">
+            </div>
+        </div>
+
+        <div class="seekbar">
+            <div class="curr-time">00.00</div>
+           <div class="seek">
+            <div class="circle"></div>
+           </div>
+            <div class="total-time">00.00</div>
+        </div>
+
+        <div class="volbar">
+            <input type="range" min="1" max="100" value="100">
+            <img src="svg/volume.svg" alt="">
+        </div>
+    </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
